@@ -14,8 +14,8 @@ export default function MessageBubble({ message }) {
       <div
         className={`max-w-[85%] px-5 py-4 rounded-3xl text-sm leading-relaxed shadow-lg ${
           isUser
-            ? "bg-gradient-to-r from-cyan-400 to-blue-500 text-black rounded-br-md font-bold"
-            : "bg-white/10 text-white border border-white/10 rounded-bl-md"
+            ? " from-[#010b1f] to-blue-500 text-black rounded-br-md font-bold"
+            : "bg-white/10 text-black border border-white/10 rounded-bl-md"
         }`}
       >
         <div className="prose prose-invert prose-sm max-w-none">

@@ -43,26 +43,18 @@ export default function AIApp() {
   };
 
   return (
-    <main className="min-h-screen flex flex-col items-center justify-center bg-[#050816] p-4 relative overflow-hidden">
+    <main className="min-h-screen flex flex-col items-center justify-center bg-white p-4 relative overflow-hidden">
       
       {/* Visual Identity */}
-      <div className="text-center mb-6 z-10">
-        <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-cyan-400/10 border border-cyan-400/20 mb-2">
-          <Sparkles size={12} className="text-cyan-400" />
-          <span className="text-[10px] text-cyan-400 font-bold uppercase tracking-widest">Legacy Intelligence</span>
-        </div>
-        <h1 className="text-5xl font-black text-white tracking-tighter uppercase italic">
-          Nida <span className="text-cyan-400">J.</span>
-        </h1>
-      </div>
+    \
 
       <div className="relative z-10 w-full max-w-4xl h-[700px] bg-white/5 border border-white/10 backdrop-blur-2xl rounded-[2.5rem] overflow-hidden shadow-2xl flex flex-col">
         
         {/* Header */}
-        <div className="border-b border-white/10 px-8 py-5 flex items-center justify-between bg-black/20">
+        <div className="border-b border-white/10 px-8 py-5 flex items-center justify-between bg-[#1a2b4b]">
           <div className="flex items-center gap-3">
-            <div className={`w-2.5 h-2.5 rounded-full ${loading ? "bg-orange-500 animate-pulse" : "bg-cyan-500 animate-pulse"}`} />
-            <span className="text-[10px] uppercase tracking-[4px] text-gray-400 font-bold">
+            <div className={`w-2.5 h-2.5 rounded-full ${loading ? "bg-orange-500 animate-pulse" : "bg-[#1a2b4b] animate-pulse"}`} />
+            <span className="text-[10px] uppercase tracking-[4px] text-white font-bold">
               {loading ? "Processing..." : "System Online"}
             </span>
           </div>
@@ -85,7 +77,7 @@ export default function AIApp() {
         </div>
 
         {/* Quick Actions & Input Area */}
-        <div className="border-t border-white/10 pt-4 bg-black/40">
+        <div className="border-t border-white/10 pt-4 bg-blue-950">
           
           {/* Action Chips */}
           <QuickActions onActionClick={(query) => processMessage(query)} />
@@ -96,12 +88,12 @@ export default function AIApp() {
                 value={input}
                 onChange={(e) => setInput(e.target.value)}
                 placeholder="Query Nida's Digital Twin..."
-                className="w-full bg-[#0f172a] border border-white/5 rounded-2xl px-6 py-5 text-sm text-white outline-none focus:border-cyan-400/40 transition-all placeholder:text-gray-600"
+                className="w-full bg-[#0f172a] border border-white/5 rounded-2xl px-6 py-5 text-sm text- outline-none focus:border-cyan-400/40 transition-all placeholder:text-gray-600"
               />
               <button
                 type="submit"
                 disabled={loading || !input.trim()}
-                className="absolute right-3 w-12 h-12 rounded-xl bg-cyan-400 text-black flex items-center justify-center hover:scale-105 active:scale-95 disabled:opacity-20 transition-all"
+                className="absolute right-3 w-12 h-12 rounded-xl bg-[#1a2b4b] text-black flex items-center justify-center hover:scale-105 active:scale-95 disabled:opacity-20 transition-all"
               >
                 <Send size={18} />
               </button>

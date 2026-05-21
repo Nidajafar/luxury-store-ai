@@ -28,7 +28,7 @@ export async function POST(req) {
       { expiresIn: "1d" }
     );
 
-    // 4. Response mein user data aur token bhejna
+    // 4. Response mein user ka data aur token bhejna
     return NextResponse.json({
       message: "Login successful",
       token,
