@@ -1,0 +1,40 @@
+{
+  "name": "luxury-store-ai",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "eslint"
+  },
+  "dependencies": {
+    "@ai-sdk/google": "^3.0.75",
+    "@google/generative-ai": "^0.24.1",
+    "@reduxjs/toolkit": "^2.11.2",
+    "axios": "^1.16.0",
+    "bcryptjs": "^3.0.3",
+    "cloudinary": "^2.10.0",
+    "framer-motion": "^12.39.0",
+    "json": "^11.0.0",
+    "jsonwebtoken": "^9.0.3",
+    "lucide-react": "^1.14.0",
+    "mongoose": "^9.6.2",
+    "next": "16.2.6",
+    "nodemailer": "^8.0.7",
+    "react": "19.2.4",
+    "react-dom": "19.2.4",
+    "react-hot-toast": "^2.6.0",
+    "react-markdown": "^10.1.0",
+    "react-redux": "^9.2.0",
+    "token": "^0.1.0",
+    "web": "^0.0.2"
+  },
+  "devDependencies": {
+    "@tailwindcss/postcss": "^4",
+    "babel-plugin-react-compiler": "1.0.0",
+    "eslint": "^9",
+    "eslint-config-next": "16.2.6",
+    "tailwindcss": "^4"
+  }
+}
