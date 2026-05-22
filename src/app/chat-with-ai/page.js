@@ -88,7 +88,7 @@ export default function AIApp() {
                 value={input}
                 onChange={(e) => setInput(e.target.value)}
                 placeholder="Query Nida's Digital Twin..."
-                className="w-full bg-[#0f172a] border border-white/5 rounded-2xl px-6 py-5 text-sm text- outline-none focus:border-cyan-400/40 transition-all placeholder:text-gray-600"
+                className="w-full bg-[#0f172a] border border-white/5 rounded-2xl px-6 py-5 text-white outline-none focus:border-cyan-400/40 transition-all placeholder:text-gray-600"
               />
               <button
                 type="submit"
