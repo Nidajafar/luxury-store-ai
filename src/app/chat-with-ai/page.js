@@ -48,7 +48,7 @@ export default function AIApp() {
       {/* Visual Identity */}
     \
 
-      <div className="relative z-10 w-full max-w-4xl h-[700px] bg-white/5 border border-white/10 backdrop-blur-2xl rounded-[2.5rem] overflow-hidden shadow-2xl flex flex-col">
+      <div className="relative z-10 w-full max-w-4xl h-175 bg-white/5 border border-white/10 backdrop-blur-2xl rounded-[2.5rem] overflow-hidden shadow-2xl flex flex-col">
         
         {/* Header */}
         <div className="border-b border-white/10 px-8 py-5 flex items-center justify-between bg-[#1a2b4b]">
