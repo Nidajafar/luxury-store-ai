@@ -56,7 +56,7 @@ const ForgotPassword = () => {
         <div className="text-center mb-8">
 
           <h2 className="text-2xl font-serif font-bold text-[#1a2b4b] uppercase">
-            Reset Password
+          RESET YOUR PASSWORD
           </h2>
 
           <p className="text-[10px] tracking-[2px] text-[#e3a20a] uppercase mt-2 font-bold">
