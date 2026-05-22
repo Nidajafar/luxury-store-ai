@@ -1,21 +1,17 @@
 import { NextResponse } from "next/server";
-import { connectMongoDB } from "@/lib/mongodb"; 
-import Order from "@/models/Order"; 
-
+import connectDb from "@/lib/db";
+import order from "@/model/order";
 export async function GET(request) {
   try {
-    await connectMongoDB();
+    await connectDb();
     
-ا
     const { searchParams } = new URL(request.url);
     const email = searchParams.get("email");
 
     if (!email) {
       return NextResponse.json({ message: "Email is required" }, { status: 400 });
     }
-
-    // کسٹمر کے آرڈرز کو نئی تاریخ کے حساب سے ترتیب دے کر لائے گا
-    const orders = await Order.find({ email }).sort({ createdAt: -1 });
+    const orders = await order.find({ email }).sort({ createdAt: -1 });
     
     return NextResponse.json({ orders }, { status: 200 });
   } catch (error) {
